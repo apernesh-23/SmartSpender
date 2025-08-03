@@ -1,0 +1,15 @@
+.finance-chart-section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.finance-chart-section h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}

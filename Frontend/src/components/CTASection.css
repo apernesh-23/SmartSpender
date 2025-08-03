@@ -1,0 +1,39 @@
+/* src/components/CTASection.css */
+.cta-section {
+  background-color: var(--card-bg);
+  color: var(--text);
+  padding: 4rem 2rem;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.cta-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cta-subheading {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: var(--text);
+}
+
+.cta-button {
+  background-color: var(--primary, #007bff);
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--primary-dark, #0056b3);
+}

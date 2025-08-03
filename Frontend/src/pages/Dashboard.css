@@ -1,0 +1,75 @@
+:root {
+  --bg-light: #f9f9f9;
+  --bg-dark: #1f1f1f;
+  --text-light: #333;
+  --text-dark: #f1f1f1;
+  --card-light: #ffffff;
+  --card-dark: #2c2c2c;
+  --income-color: #4caf50;
+  --expense-color: #f44336;
+  --balance-color: #2196f3;
+}
+
+/* Theme Compatibility */
+body.light .dashboard {
+  background-color: var(--bg-light);
+  color: var(--text-light);
+}
+
+body.dark .dashboard {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+.dashboard {
+  padding: 40px 20px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dashboard h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  flex: 1 1 250px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+body.light .card {
+  background-color: var(--card-light);
+}
+
+body.dark .card {
+  background-color: var(--card-dark);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.income h3 {
+  color: var(--income-color);
+}
+.expenses h3 {
+  color: var(--expense-color);
+}
+.balance h3 {
+  color: var(--balance-color);
+}
+
+.card p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 10px;
+}

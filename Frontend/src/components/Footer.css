@@ -1,0 +1,85 @@
+.footer {
+  background-color: var(--footer-bg);
+  color: var(--text-color);
+  padding: 3rem 1.5rem 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-brand {
+  flex: 1 1 300px;
+}
+
+.footer-brand h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-brand p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+.footer-links {
+  display: flex;
+  gap: 2rem;
+  flex: 2 1 500px;
+  justify-content: space-between;
+}
+
+.footer-links h4 {
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--accent-color);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* Theme Variables (Dark/Light toggle) */
+:root {
+  --footer-bg: #f8f9fa;
+  --text-color: #212529;
+  --text-muted: #6c757d;
+  --accent-color: #007bff;
+  --border-color: #dee2e6;
+}
+
+[data-theme='dark'] {
+  --footer-bg: #1c1c1c;
+  --text-color: #f1f1f1;
+  --text-muted: #a1a1a1;
+  --accent-color: #4dabf7;
+  --border-color: #2d2d2d;
+}
